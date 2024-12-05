@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;400&display=swap');
 
+:root {
+    --div-height: 35rem;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 nav {
@@ -32,6 +37,7 @@ nav ul {
 nav ul li {
     padding: 0.5rem 0.7rem;
 }
+
 nav ul li:hover {
     cursor: pointer;
     font-weight: bold;
@@ -42,7 +48,8 @@ nav ul li i {
     margin-right: 2px;
     color: rgb(11, 11, 71);
 }
-nav:last-of-type i{
+
+nav:last-of-type i {
     color: rgb(35, 35, 85);
 }
 
@@ -56,12 +63,12 @@ nav:last-of-type>ul>li:first-of-type {
     text-align: justify;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     height: 50vh;
 }
 
-.announcement-cont{
+.announcement-cont {
     margin-top: 1rem;
     background-color: #1D305E;
     padding: 1rem;
@@ -72,30 +79,57 @@ nav:last-of-type>ul>li:first-of-type {
     justify-content: space-between;
 }
 
-.ann-icon{
+.ann-icon {
     background-color: white;
     width: fit-content;
     padding: 5px 7px;
     border-radius: 50%;
 }
-.ann-lm-btn{
+
+.ann-lm-btn {
     background-color: white;
     padding: 6px;
 }
-.ann-text{
+
+.ann-text {
     width: 89%;
     color: white;
     font-size: 16.5px;
-}
-
-.main-cont{
-    
-}
-
-.left-main{
 
 }
 
-.right-main{
+.ann-text marquee {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
 
+.ann-lm-btn:hover {
+    cursor: pointer;
+}
+
+/*  */
+
+.main-cont {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.left-main {
+    width: 25%;
+    height: var(--div-height);
+    background-color: red;
+}
+
+.right-main {
+    width: 75%;
+    height: var(--div-height);
+    background-color: blue;
+}
+
+
+
+footer {
+    height: 10rem;
 }
