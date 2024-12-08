@@ -6,7 +6,8 @@
     --div-border-clr: rgb(35, 35, 85);
     --icon-color: rgb(35, 35, 85);
     --quick-link-border-clr: rgb(113, 113, 156);
-    ;
+    --secondary-height: 30rem;
+    --sub-text: rgb(90, 90, 90);
 }
 
 * {
@@ -226,12 +227,185 @@ nav:last-of-type>ul>li:first-of-type {
     padding: 5px;
 }
 
-footer {
-    height: 10rem;
+.news {
+    padding: 0 1rem;
 }
 
+.news-banner {
+    height: 21rem;
+}
 
+.news-banner img {
+    height: 100%;
+    width: 100%;
+}
 
+.news-date {
+    margin-top: 8px;
+    font-size: 16px;
+    color: var(--icon-color);
+    font-weight: 600;
+}
+
+.news-date i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.news-heading {
+    margin-top: 5px;
+    font-weight: 600;
+    height: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news-text {
+    margin-top: 5px;
+    color: rgb(77, 76, 76);
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.news-lm-btn {
+    background-color: var(--icon-color);
+    color: white;
+    padding: 8px 10px;
+    width: fit-content;
+    float: right;
+    margin-top: 0.3rem;
+}
+
+/* Secondary */
+.sec-main .left-main,
+.sec-main .right-main {
+    height: var(--secondary-height) !important;
+}
+
+.sec-main .block {
+    border: 1px solid var(--border-color);
+    height: 100%
+}
+
+.bday-slider-main {
+    height: 27rem;
+    padding: 10px
+}
+
+.bday-slider .bday-img {
+    height: 15rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.bday-slider-main .emp-name {
+    margin-top: 1rem;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--div-border-clr);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.bday-slider-main .emp-des {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--sub-text);
+}
+
+.bday-slider-main .greet-btn {
+    background-color: var(--icon-color);
+    color: white;
+    width: fit-content;
+    padding: 8px 20px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.bday-slider-main .greet-btn:hover {
+    cursor: pointer;
+}
+
+.sec-main .right-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.sec-main .right-main>div {
+    flex: 0 0 49.2%;
+}
+
+/* .sec-main .right-main>div .block{} */
+
+.new-associate-main {
+    height: 100%;
+    padding: 10px;
+}
+
+.naa-slide-item {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--quick-link-border-clr);
+    margin: 5px 0;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+.naa-slide-item .emp-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.naa-slide-item .emp-icon img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.naa-slide-item .emp-mail{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.naa-slide-item .emp-nd{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.naa-slide-item .emp-mail:hover{
+    cursor: pointer;
+}
+
+.naa-slide-item .emp-mail i{
+    font-size: 30px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: var(--div-border-clr);
+    color: white;
+    height: 3rem;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
 
 @media (max-width:1280px) {
     .left-main {
