@@ -357,7 +357,7 @@ nav:last-of-type>ul>li:first-of-type {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 13px;
+    gap: 11px;
 }
 
 .sec-main .right-main>div {
