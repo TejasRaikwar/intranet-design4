@@ -624,4 +624,7 @@ footer {
     .right-main {
         width: 72%;
     }
+    .site-content {
+        padding: 0 5rem;
+    }
 }
