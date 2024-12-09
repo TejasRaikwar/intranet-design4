@@ -356,14 +356,14 @@ nav:last-of-type>ul>li:first-of-type {
     display: flex;
     width: 100%;
     border: 1px solid var(--quick-link-border-clr);
-    margin: 5px 0;
-    padding: 5px 10px;
+    margin: 10px 0;
+    padding: 10px;
     justify-content: space-between;
 }
 
 .naa-slide-item .emp-icon {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 .naa-slide-item .emp-icon img {
@@ -372,29 +372,97 @@ nav:last-of-type>ul>li:first-of-type {
     height: 100%;
 }
 
-.naa-slide-item .emp-mail{
-    background-color: red;
+.naa-slide-item .emp-mail {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
 }
 
-.naa-slide-item .emp-nd{
-    background-color: red;
+.naa-slide-item .emp-nd {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-.naa-slide-item .emp-mail:hover{
+.naa-slide-item .emp-mail:hover {
     cursor: pointer;
 }
 
-.naa-slide-item .emp-mail i{
+.naa-slide-item .emp-mail i {
     font-size: 30px;
 }
+
+.naa-slide-item .emp-name {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.naa-slide-item .emp-des {
+    font-size: 12px;
+}
+
+.documents-main-cont {
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.documents-main-cont .doc-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--div-border-clr);
+    padding: 10px;
+}
+
+.documents-main-cont .doc-item:hover{
+    cursor: pointer;
+}
+
+.documents-main-cont .doc-item i {
+    font-size: 18px;
+}
+
+.documents-main-cont .doc-item>div:nth-of-type(2) {
+    width: 80%;
+}
+
+.mem-slider-main {
+    height: 100%;
+    padding: 10px;
+}
+
+.mem-slider-main .mem-img {
+    height: 18rem;
+    background-color: red;
+}
+
+.mem-slider-main .mem-img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.mem-slider-main .mem-des {
+    margin-top: 5px;
+    height: 7.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
 
 footer {
     margin-top: 10px;
