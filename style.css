@@ -566,25 +566,22 @@ nav:last-of-type>ul>li:first-of-type {
     padding: 1rem 3rem
 }
 
-.ar-slide-item{
-    height: 27rem;
+.ar-main-cont{
+    padding: 10px;
 }
-
-/*  */
 
 .ar-main-cont .block-img {
     height: 10rem;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 0.6rem;
 }
 
 .ar-main-cont .block-img img {
-    height: 100%;
-    width: 90%;
-    border-radius: 3px;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin-right: 2rem;
 }
 
 .ar-main-cont .emp-name {
@@ -597,19 +594,9 @@ nav:last-of-type>ul>li:first-of-type {
     font-size: 16px;
 }
 
-.ar-container .block-img {
-    margin-top: 5px;
-    height: 10rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
 .ar-container .sub-heading {
-    margin: 3px 0;
-    font-size: 18px;
+    margin: 8px 0;
+    font-size: 17px;
     font-weight: 600;
     color: #1f1e1e;
     height: 22px;
