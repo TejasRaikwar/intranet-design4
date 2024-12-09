@@ -8,6 +8,14 @@
     --quick-link-border-clr: rgb(113, 113, 156);
     --secondary-height: 30rem;
     --sub-text: rgb(90, 90, 90);
+    /*  */
+    --main-color: #071c35;
+    --secondary-color: rgb(237, 237, 237);
+    --main-color-trans: #071c3581;
+    --placeholder-clr: #272727;
+    --quick-links-bgclr: #dfdfdf;
+    --shadow-color: rgb(197, 197, 197);
+    --border-color: rgb(180, 180, 180);
 }
 
 * {
@@ -137,6 +145,18 @@ nav:last-of-type>ul>li:first-of-type {
     border: 1px solid var(--border-color);
     height: var(--div-height);
 }
+
+.common-tools,
+.site-vis{
+    height: 30rem;
+}
+
+.common-tools>.block>div:nth-of-type(2),
+.site-vis>.block>div:nth-of-type(2){
+    height: 27rem;
+    overflow-y: auto;
+}
+
 
 .block-header {
     font-weight: 700;
@@ -416,9 +436,10 @@ nav:last-of-type>ul>li:first-of-type {
     justify-content: space-between;
     border: 1px solid var(--div-border-clr);
     padding: 10px;
+    margin: 10px 0;
 }
 
-.documents-main-cont .doc-item:hover{
+.documents-main-cont .doc-item:hover {
     cursor: pointer;
 }
 
@@ -440,7 +461,7 @@ nav:last-of-type>ul>li:first-of-type {
     background-color: red;
 }
 
-.mem-slider-main .mem-img img{
+.mem-slider-main .mem-img img {
     height: 100%;
     width: 100%;
 }
@@ -451,11 +472,103 @@ nav:last-of-type>ul>li:first-of-type {
     height: 7.5rem;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
 
+
+/* Events */
+.events {
+    margin-top: 5px;
+    height: 100%;
+    max-height: 35rem;
+    overflow-y: auto;
+    border: 1px solid var(--quick-links-bgclr);
+    border-radius: 10px;
+}
+
+.events ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.events ul>li {
+    display: flex;
+    margin: 20px 0;
+}
+
+.cal-div {
+    width: 140px;
+}
+
+.events .top {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-color: var(--main-color);
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+.cal-div .bottom {
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    padding: 3px 0;
+}
+
+.cal-div .date {
+    font-size: 22px;
+}
+
+.cal-div .day {
+    font-size: 14px;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+}
+
+.event-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.event-heading {
+    font-size: 15px;
+}
+
+.event-time {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.event-time i {
+    margin-right: 10px;
+}
+
+.event-time span {
+    margin: 0 10px;
+}
+
+.announcements-inner {
+    box-sizing: border-box;
+    padding: 1rem 3rem
+}
 
 
 
